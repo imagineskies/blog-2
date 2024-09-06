@@ -1,0 +1,823 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: #0D1313;
+  color: #B4AA97;
+  font-size: 16px;
+  
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  scrollbar-color: #FFF #1b241f;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1b241f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #674126;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #61422d;
+}
+
+.hidden {
+  visibility: hidden !important;
+  display: none !important;
+}
+
+.shown {
+  visibility: visible !important;
+  display: block !important;
+}
+
+.overshown {
+  overflow-y: scroll;
+}
+
+.overhidden {
+  overflow: hidden;
+}
+
+.backgroundfix {
+  background-attachment: fixed !important;
+}
+
+.dib {
+  display: inline-block !important;
+}
+
+@font-face {
+  font-family: 'Kumar One', serif;
+  src: local('Kumar One'), local('KumarOne'), url(../fonts/KumarOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Libre Barcode 39 Extended Text', system-ui;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/LibreBarcode39ExtendedText-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Merriweather', serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Merriweather-Regular.ttf);
+}
+
+/*____________________________________________________________________________________*/
+/* Top Menu */
+nav#menuTemp, #poemPagesNavbar {
+  position: fixed;
+  animation-fill-mode: forwards;
+  font-family: 'Allerta Stencil', sans-serif;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  color: #CDCDCD;
+  z-index: 10;
+}
+
+nav#menuTemp a, #poemPagesNavbar a {
+  color: #35464D;
+  text-decoration: underline;
+  font-size: 1.25rem;
+}
+
+nav#menuTemp .fab, #poemPagesNavbar .fab {
+  font-size: 1.25rem;
+  color: #35464D;
+}
+
+nav#menuTemp .dropdown-menu, #poemPagesNavbar .dropdown-menu {
+  background-color: #E1C39A;
+}
+
+nav#menuTemp .dropdown-item, #poemPagesNavbar .dropdown-item {
+  color: #35464D;
+}
+
+@media (max-width: 719px) {
+  nav#menuTemp .dropdown-menu, #poemPagesNavbar .dropdown-menu {
+    background-color: #D4CDC1;
+  }
+  nav#menuTemp, #poemPagesNavbar {
+    background-color: #D4CDC1;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 5px;
+}
+
+/*____________________________________________________________________________________*/
+/* Header */
+header.masthead {
+  background-image: url(../img/Wallpaper.jpg);
+  background-position: center;
+  background-size: stretch;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100% !important;
+  text-align: center;
+}
+
+@media (min-width: 719px) {
+  header.masthead.music,
+  header.masthead.main,
+  header.masthead.about{
+    padding-top: 20rem;
+    height: 100%;
+  }
+}
+
+@media (max-width: 719px) {
+  header.masthead {
+    padding-top: 8rem;
+    height: auto;
+  }
+
+  header.masthead.main, header.masthead.music {
+    padding-top: 10rem;
+    height: 100% !important;
+  }
+}
+
+header.gameMasthead {
+  padding-top: 8rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url(../img/background.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+@media (max-width: 719px) {
+  header.gameMasthead {
+    height: auto;
+  }
+
+  header.testHeader {
+    height: auto;
+  }
+}
+
+header .textbox {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAE0lEQVQYV2PkFRb+xYAGGGkgCABebgXnHnM+YQAAAABJRU5ErkJggg==") repeat;
+  text-align: center;
+  padding: 15px;
+
+}
+
+@media (max-width: 719px) {
+  header h2 {
+    font-size: 38px
+  }
+}
+
+header.masthead p {
+  font-weight: 300;
+  font-size: 18px;
+  color: #B4AA97;
+}
+
+@media (min-width: 719px) {
+  header.gameMasthead {
+    padding-top: 12rem;
+  }
+}
+
+.headCTA {
+  color: #35464D;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+
+/*____________________________________________________________________________________*/
+/* Poems Page*/
+
+.poemDiv {
+  padding: 0 1rem;
+  display: inline-block;
+  align-items: stretch;
+  margin: 1%;
+  border: 2px solid #E1C39A;
+  max-width: 25%;
+
+  width: 100%;
+  height: 100%;
+}
+
+.poemDiv h3 {
+  font-size: 2.25rem;
+}
+
+.poemDiv > h3 > p {
+  height:  200px;
+}
+
+@media (max-width:719px) {
+  .poemDiv {
+    max-width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* Poems Menu */
+#mainPoemsMenu .btn {
+  background-color: #A8897D;
+  color: #0D1313;
+  padding: 15px;
+  margin: 0;
+}
+
+#mainPoemsMenu .btn:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #f8f9fa;
+  padding: 15px;
+}
+
+#mainPoemsMenu .btn.active {
+  background-color: #0D1313;
+  color: #A8897D;
+}
+
+/* Second Menu Poem */
+#mainPoemsMenuM {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  background-color: #0D1313;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+#mainPoemsContentM {
+  position: relative;
+  opacity: 0;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  transition: 0.6s ease;
+}
+
+#mainPoemsContentM div {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 32px;
+  color: #B4AA97;
+  display: block;
+  transition: 0.3s;
+}
+
+#buttonOpenPoemsNav {
+  margin-top: 15px;
+  font-size: 28px;
+  text-align: center;
+  border: 2px solid #A8897D;
+  border-radius: 25px;
+}
+
+#mainPoemsMenuM .btn.active {
+  background-color: #A8897D;
+  color: #0D1313;
+}
+
+#mainPoemsMenuM .btn:hover {
+  background-color: #A8897D;
+  color: #0D1313;
+}
+
+#navbarPagesPoems {
+  color: #833721;
+}
+
+#poemsDropDown {
+  background-color: #0D1313;
+}
+
+#mainPoemsBody {
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media (max-width: 719px) {
+  #mainPoemsMenu {
+    z-index: 5;
+  }
+
+  #mainPoemsMenu .row {
+    width: 100%;
+    height: auto;
+  }
+
+  #navbarPagesPoems {
+    text-align: center;
+  }
+}
+
+/*____________________________________________________________________________________*/
+/* Check Box */
+.checkBox {
+  padding: 15px;
+}
+
+.checkBox p {
+  padding: 0;
+  margin: 0;
+}
+
+#pdwCopy {
+  width: 100%;
+  font-size: 28px;
+  text-align: center;
+}
+
+.checkMarkEmpty {
+  height: 35px;
+  background-image: url(../img/square-regular.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkMarkFull {
+  height: 35px;
+  background-image: url(../img/check-square-regular.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 719px) {
+  #checkBox {
+    display: block
+  }
+}
+
+/*____________________________________________________________________________________*/
+/* Base 64 Converter */
+#base64EncodeTextBoxStart, #base64EncodeTextBoxEnd, #base64DecodeTextBoxStart, #base64DecodeTextBoxEnd {
+  width: 100%;
+  height: auto;
+}
+
+#base64EncodeTextBoxEnd, #base64DecodeTextBoxEnd {
+  margin-top: 10px;
+}
+
+/*____________________________________________________________________________________*/
+/* Data Transfer Calculator */
+#dataTransferCalculator {
+  margin: 0 0 300px 0;
+}
+
+.dataAmountType {
+  margin: 15px
+}
+
+#dataTransferSpeed,
+#dataTransferAmount {
+  width: 100%;
+  height: 54px;
+}
+
+#dataAmountType,
+#dataTransferType {
+  width: 100%;
+  height: auto;
+}
+
+.estimatedTime * {
+  text-align: center;
+}
+
+/*____________________________________________________________________________________*/
+/* Number Silde */
+.numberSlideTextBox {
+  width: 100%;
+  text-align: center;
+  font-size: inherit;
+}
+
+.numberslide {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 30px;
+  background: #464646;
+  transition: opacity .2s;
+  margin-top: 2px;
+}
+
+.numberslide::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #833721;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.numberslide::-moz-range-thumb {
+  background: #833721;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#thumb {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 28px;
+  background-color: #464646;
+  color: #0D1313;
+  ;
+}
+
+@media (max-width: 719px) {
+  .numberSlideTextBox {
+    font-size: 18px;
+  }
+}
+
+/*____________________________________________________________________________________*/
+iframe {
+  border: 0;
+  margin: 15px;
+}
+
+hr {
+  border: none;
+  border-top: 5px double #A8897D;
+  color: #A8897D;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+  width: 100%;
+}
+
+@media (max-width: 719px) {
+  .poems div {
+    display: block;
+  }
+
+  iframe {
+    border: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.list-group-item {
+  background-color: rgba(0, 0, 0, 0.0);
+  text-align: center;
+}
+
+/*____________________________________________________________________________________*/
+section.welcome {
+  background-color: #0D1313;
+  color: #B4AA97;
+  text-align: center;
+}
+
+section .dropdown-item {
+  color: #A8897D;
+}
+
+/*____________________________________________________________________________________*/
+/* Buttons */
+
+.btn-inverted {
+  background-color: #464646;
+  color: #0D1313;
+  padding: 15px;
+  margin: 5px 0;
+  text-align: center;
+  display: block;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  border: none;
+  transition: all ease-in-out .2s;
+}
+
+.btn-inverted * {
+  color: #0D1313;
+}
+
+.btn-inverted:hover {
+  background-color: #464646;
+  color: #0D1313;
+  border: none;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.btn-inverted.active {
+  background-color: #0D1313;
+  color: #A8897D;
+}
+
+.btn-inverted:hover ~ .underButtonWrapper {
+  width: 100%;
+}
+
+.underButtonWrapper{
+  width: 0%;
+  transition: all ease-in-out .3s
+}
+
+.underButton {
+  width: 100%;
+  height: 6px;
+  border-top: 5px solid #cdcdcd;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (max-width: 1023px) {
+  .btn {
+    display: block;
+  }
+
+.btn:focus, .btn:active {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+}
+
+
+/*____________________________________________________________________________________*/
+/* Videos Page*/
+.youtube-player {
+  width: 560px !important;
+  height: 315px !important;
+}
+
+/*____________________________________________________________________________________*/
+/* Subsections */
+.rowHome {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin: 50px 0;
+  border: 5px solid #A8897D;
+}
+
+iframe {
+  width: 100%;
+  height: 380px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.musicOnRepeat h2 {
+  color: #982875;
+}
+
+.musicChill h2 {
+  color: #902a2a;
+}
+
+.musicRap h2 {
+  color: #96363c;
+}
+
+.musicEDM h2 {
+  color: #864c1a;
+}
+
+.musicTitleBox {
+  background-color: #A8897D;
+  box-shadow: -1px 1px 25px 10px rgba(51%, 38%, 34%, 0.50);
+}
+
+/*____________________________________________________________________________________*/
+/* Some List Commands */
+a {
+  list-style-type: none;
+  text-decoration: none;
+  text-align: inherit;
+  float: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #B4AA97;
+}
+
+#mainPoemsMenu .icon-rap {
+  background-color: #915e21;
+  width: auto;
+}
+
+/*____________________________________________________________________________________*/
+p {
+  margin: 16px 0px;
+  font-size: 16px;
+  padding: 10px 0px 5px 5px;
+  float: none;
+  color: #B4AA97;
+}
+
+pre {
+  text-align: center;
+  margin: 16px 0px;
+  font-size: 16px;
+  padding: 10px 0px 5px 5px;
+  float: none;
+  color: #B4AA97;
+}
+
+ul {
+  text-decoration: none;
+}
+
+.wrapword {
+  white-space: -moz-pre-wrap !important;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  white-space: pre-wrap;
+  /* css-3 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+  white-space: -webkit-pre-wrap;
+  /* Newer versions of Chrome/Safari*/
+  word-break: break-all;
+  white-space: normal;
+}
+
+/*____________________________________________________________________________________*/
+/* Standard */
+
+.fa-chevron-left,
+.fa-chevron-right {
+  padding: 0 10px;
+}
+
+.fa-angle-double-down {
+  font-size: 25px;
+  text-align: center;
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  width: 343px;
+  height: 62.5px;
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.4, 1.4, 1.4);
+    transform: scale3d(1.4, 1.4, 1.4)
+  }
+
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
+  }
+}
+
+
+a {
+  color: #A8897D;
+}
+
+a, ul, ol, li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/*____________________________________________________________________________________*/
+/* Text */
+.h1, .h2, .h3, .h4, .h5, .h6, .p, h1, h2, h3, h4, h5, h6, p {
+  padding: 5px 0;
+  margin: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Allerta Stencil', sans-serif;
+  font-weight: 400;
+  color: #35464D;
+}
+
+.estimatedTime h5 {
+  font-family: 'Time Clock';
+}
+
+.siteTitle, .pageTitle {
+  font-family: 'Kumar One', serif !important;
+}
+
+.siteSubTitle{
+  font-family: 'Libre Barcode 39 Extended Text', system-ui;
+}
+
+.pageSubTitle {
+  color: #6D7C6B !important;
+}
+
+#footerLine {
+  text-align: center;
+  font-family: 'Libre Barcode 39 Extended', system-ui;
+}
+
+.h1, h1 {
+  font-size: 4.5rem;
+}
+
+.h2, h2 {
+  font-size: 3.75rem;
+}
+
+.h3, h3 {
+  font-size: 3rem;
+}
+
+@media (max-width: 719px) {
+  .h3, h3 {
+    font-size: 34px;
+  }
+  .BottomButton {
+    font-size: 20px;
+  }
+}
+
+.h4, h4 {
+  font-size: 2.25rem;
+}
+
+.h5, h5 {
+  font-size: 1.5rem;
+}
+
+.h6, h6 {
+  font-size:1.25rem;
+}
+
+.p, p, pre, .pre {
+  font-size: 1rem;
+  font-family: 'Merriweather', serif;
+}

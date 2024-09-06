@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Welcome to my blog.">
+  <meta name="author" content="Rayna Weeden">
+  <meta name="keywords" content="blogs">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../img/background.jpg">
+
+  <title>Sandbox</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- Style Css -->
+  <link href="../css/main.css" rel="stylesheet">
+  <!-- Font/icon List -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <nav id="menuTemp" class="navbar navbar-expand-lg navbar-dark" aria-label="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand siteTitle" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsPages" aria-controls="navbarsPages" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsPages"></div>
+    </div>
+  </nav>
+
+  <header class="testHeader masthead backgroundfix">
+    <div class="container-fluid h-100 p-0">
+        <div class="row h-100 mx-auto d-flex align-items-center">
+          <div class="col-lg-8 mx-auto d-flex justify-content-center">
+            <div>
+            <div>
+              <h2 class="pageTitle dib">Sandbox</h2>
+              <h2 class="dib">/</h2>
+              <h2 class="dib" style="font-family: 'Libre Barcode 39 Extended', system-ui;">Sandbox</h2>
+            </div>
+            <p class="pageSubTitle">
+              Here I post, share, and create cool things that you can check out and use.
+            </p>
+          </div>
+      </div>
+      <br />
+    </div>
+  </header>
+
+
+  <section id="passwordGenerator">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>Password Generator</h2>
+          <div id="pdwCopy" class="btn-inverted col-lg-1 mx-auto">
+            <i class="far fa-clipboard"></i>
+          </div>
+          <div class="underButtonWrapper col-lg-8 mx-auto d-flex justify-content-center">
+            <div class="underButton"></div>
+            <div class="underButton"></div>
+          </div>
+          <label id="numberSlideTextBoxLabel"></label>
+          <input type="text" id="numberSlideTextBox" aria-labelledby="numberSlideTextBoxLabel" class="numberSlideTextBox">
+          <input type="range" id="numberSlide" min="8" max="64" value="20" class="numberslide" oninput="slideRange()" onchange="slideRange()">
+          <div id="thumb" class="mx-auto">20</div>
+        </div>
+      </div>
+      <div class="checkBox row">
+        <div class="col-lg-3 mx-auto">
+          <div id="checkMarkOne" class="checkMarkFull" aria-labelledby="checkMarkEmptyLabel1"></div>
+          <p id="checkMarkEmptyLabel1">Upper Case Letters</p>
+        </div>
+        <div class="col-lg-3 mx-auto">
+          <div id="checkMarkTwo" class="checkMarkFull" aria-labelledby="checkMarkEmptyLabel2"></div>
+          <p id="checkMarkEmptyLabel2">Lower Case Letters</p>
+        </div>
+        <div class="col-lg-3 mx-auto">
+          <div id="checkMarkThree" class="checkMarkEmpty" aria-labelledby="checkMarkEmptyLabel3"></div>
+          <p id="checkMarkEmptyLabel3">Numbers</p>
+        </div>
+      </div>
+      <div class="checkBox row">
+        <div class="col-lg-3 mx-auto">
+          <div id="checkMarkFour" class="checkMarkEmpty" aria-labelledby="checkMarkEmptyLabel4"></div>
+          <p id="checkMarkEmptyLabel4">Special characters</p>
+        </div>
+        <div class="col-lg-3 mx-auto">
+          <a data-toggle="tooltip" data-placement="bottom" title="More characters not commonly fount on a keyboard.">
+            <div id="checkMarkSeven" class="checkMarkEmpty" aria-labelledby="checkMarkEmptyLabel7"></div>
+            <p id="checkMarkEmptyLabel7">Extended ASCII</p>
+          </a>
+        </div>
+        <div class="col-lg-3 mx-auto">
+          <a data-toggle="tooltip" data-placement="bottom" title="Extends the range of the slider.">
+            <div id="checkMarkEight" class="checkMarkEmpty" aria-labelledby="checkMarkEmptyLabel8"></div>
+            <p id="checkMarkEmptyLabel8">Range Extender</p>
+          </a>
+        </div>
+      </div>
+      <div class="checkBox row">
+        <div class="col-lg-3 mx-auto">
+          <a data-toggle="tooltip" data-placement="bottom" title="Randomize the string before generation.">
+            <div id="checkMarkNine" class="checkMarkEmpty" aria-labelledby="checkMarkEmptyLabel9"></div>
+            <p id="checkMarkEmptyLabel9">Harden</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="base64Converter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2 id="base64Title">Base 64 Encoder</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <input type="text" id="base64EncodeTextBoxStart" placeholder="Enter text here!" class="base64TextBox">
+          <input type="text" id="base64EncodeTextBoxEnd" placeholder="End results!" class="base64TextBox">
+        </div>
+        <div class="col-lg-2 mr-auto align-self-end">
+          <div id="base64ConvertButton" class="btn-inverted text-center" onclick="base64Convertion();">
+            Convert!
+          </div>
+        </div>
+      </div>
+      <div class="checkBox row">
+        <div class="col-lg-3 mx-auto">
+          <div id="checkMarkFive" class="checkMarkFull" aria-labelledby="checkMarkEmptyLabel5"></div>
+          <p id="checkMarkEmptyLabel5">Encode</p>
+        </div>
+        <div class="col-lg-3 mx-auto">
+          <div id="checkMarkSix" class="checkMarkEmpty" aria-labelledby="checkMarkEmptyLabel6"></div>
+          <p id="checkMarkEmptyLabel6">Decode</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Calculator is not completed. There are errors that I need to fix.
+   
+  <section id="dataTransferCalculator">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>Data Transfer Calculator</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mx-auto">
+          <h4>File Size</h4>
+          <div class="input-group row mx-auto">
+            <div class="col-lg-8 d-flex align-items-center">
+              <input type="text" id="dataTransferAmount" placeholder="File Size" oninput="this.value = this.value.replace(/[^0-9.]/g, '')">
+            </div>
+            <div class="col-lg-3 input-group-prepend">
+              <button id="dataAmountType" class="btn-inverted dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mb</button>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item text-center" onclick="document.getElementById('dataAmountType').innerHTML = 'Bs'">B</li>
+                <li class="dropdown-item text-center" onclick="document.getElementById('dataAmountType').innerHTML = 'Kb'">Kb</li>
+                <li class="dropdown-item text-center" onclick="document.getElementById('dataAmountType').innerHTML = 'Mb'">Mb</li>
+                <li class="dropdown-item text-center" onclick="document.getElementById('dataAmountType').innerHTML = 'Gb'">Gb</li>
+                <li class="dropdown-item text-center" onclick="document.getElementById('dataAmountType').innerHTML = 'Tb'">Tb</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mx-auto">
+          <h4>Transfer Speed</h4>
+          <div class="input-group row mx-auto">
+            <div class="col-lg-8 d-flex align-items-center">
+              <input type="text" id="dataTransferSpeed" class="dtc" placeholder="Transfer Rate" oninput="this.value = this.value.replace(/[^0-9.]/g, '')">
+            </div>
+            <div class="col-lg-3 input-group-prepend">
+              <button id="dataTransferType" class="btn-inverted dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mbps/s</button>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item text-center" onclick="document.getElementById('dataTransferType').innerHTML = 'Bps/s'">Bps/s</li>
+                <li class="dropdown-item text-center" onclick="document.getElementById('dataTransferType').innerHTML = 'Kbps/s'">Kbps/s</li>
+                <li class="dropdown-item text-center" onclick="document.getElementById('dataTransferType').innerHTML = 'Mbps/s'">Mbps/s</li>
+                <li class="dropdown-item text-center" onclick="document.getElementById('dataTransferType').innerHTML = 'Gbps/s'">Gbps/s</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-10 mx-auto">
+          <div id="dtcStart" class="btn-inverted">
+            <h6>Calculate!</h6>
+          </div>
+        </div>
+      </div>
+      <div class="row mx-auto d-flex justify-content-center">
+        <div class="col-lg-2">
+          <h4 id="estimatedTimeDays">00</h4>
+          <h5>Days</h5>
+        </div>
+        <div class="col-lg-2">
+          <h4 id="estimatedTimeHours">00</h4>
+          <h5>Hours</h5>
+        </div>
+        <div class="col-lg-2">
+          <h4 id="estimatedTimeMinutes">00</h4>
+          <h5>Minutes</h5>
+        </div>
+        <div class="col-lg-2">
+          <h4 id="estimatedTimeSeconds">00</h4>
+          <h5>Seconds</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  -->
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="../js/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="../js/main.js"></script>
+  <script src="../js/pvar.js"></script>
+
+  <script>
+    window.onload = function() {
+      slideRange()
+    }
+  </script>
+</body>
+
+</html>
