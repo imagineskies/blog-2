@@ -19,7 +19,7 @@ var homePageMenu = `
     </a>
     <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="Pages/poems.html">Poems</a></li>
-        <li><a class="dropdown-item" href="Pages/infrequents.html">Infrequents</a></li>
+        <li><a class="dropdown-item" href="https://listed.to/@ImagineSkies">Infrequents</a></li>
     </ul>
 </li>
 <li class="nav-item">
@@ -38,7 +38,7 @@ var pagesMenu = `
     </a>
     <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="poems.html">Poems</a></li>
-        <li><a class="dropdown-item" href="infrequents.html">Infrequents</a></li>
+        <li><a class="dropdown-item" href="https://listed.to/@ImagineSkies">Infrequents</a></li>
     </ul>
 </li>
 <li class="nav-item">
@@ -57,7 +57,7 @@ var navbarsPoemPages = `
     </a>
     <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="../poems.html">Poems</a></li>
-        <li><a class="dropdown-item" href="../infrequents.html">Infrequents</a></li>
+        <li><a class="dropdown-item" href="https://listed.to/@ImagineSkies">Infrequents</a></li>
     </ul>
 </li>
 <li class="nav-item">

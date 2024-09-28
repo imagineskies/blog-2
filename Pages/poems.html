@@ -46,7 +46,7 @@
   <header class="masthead">
     <div class="container-fluid h-100 p-0">
       <div class="row h-100 mx-auto d-flex align-items-center">
-        <div id="textOne" class="col-lg-8 mx-auto d-flex justify-content-center">
+        <div id="textOne" class="col-lg-8 mx-auto  ">
           <div>
             <div>
               <h2 class="pageTitle dib">Poems</h2>
@@ -78,11 +78,26 @@
         <div class="row mx-auto align-items-center justify-content-center">
 
           <div class="poemDiv">
+            <p>10/14/2023 &#x2022; <span id="mutually-ensure-destruction-readtime"></span></p>
+            <a href="poems/mutually-ensure-destruction.html">
+              <h3>Mutually Ensure Destruction</h3>
+              <p>
+                I wrote this poem a few days after October 7th and reading the news. However, what 
+                pained me more than that day was reading the history of Isreal and the subsequent 
+                apartide that's existed there for decades. Seeing images of Gaza decimated into rubble, 
+                turning into an unliveable warzone. I read about the leveling of civilian infrastructure 
+                and watched unwavering support for a country committing genocide. This poem is to express 
+                my pain for the Palestinian people.
+              </p>
+            </a>
+          </div>
+
+          <div class="poemDiv">
             <p>Undated &#x2022; <span id="the-five-w-readtime"></span></p>
             <a href="poems/the-five-ws.html">
               <h3>The Five W's</h3>
               <p>
-                This is one of my newest poems that I've written. It follows me
+                This poem follows me
                 asking myself the five w's. Who, What, When, Where and Why. The
                 constant theme is me questioning who is to blame for my abuse as a
                 child. As well as me expressing the anger I hold towards my parents.
@@ -182,15 +197,6 @@
     </div>
   </section>
 
-  <section class="hidden" id="innerframe1"></section>
-  <section class="hidden" id="innerframe2"></section>
-  <section class="hidden" id="innerframe3"></section>
-  <section class="hidden" id="innerframe4"></section>
-  <section class="hidden" id="innerframe5"></section>
-  <section class="hidden" id="innerframe6"></section>
-  <section class="hidden" id="innerframe7"></section>
-  <section class="hidden" id="innerframe8"></section>
-
   <footer>
     <div class="container">
       <div class="row align-items-baseline">
@@ -237,6 +243,15 @@
   <script src="../js/main.js"></script>
   <script src="../js/pvar.js"></script>
   
+  <section class="hidden" id="innerframe1"></section>
+  <section class="hidden" id="innerframe2"></section>
+  <section class="hidden" id="innerframe3"></section>
+  <section class="hidden" id="innerframe4"></section>
+  <section class="hidden" id="innerframe5"></section>
+  <section class="hidden" id="innerframe6"></section>
+  <section class="hidden" id="innerframe7"></section>
+  <section class="hidden" id="innerframe8"></section>
+  <section class="hidden" id="innerframe9"></section>
   <script>
     $('#innerframe1').load('https://pulcherrimumquaerere.com/Pages/poems/a-life.html #aLifePoem');
     $('#innerframe2').load('https://pulcherrimumquaerere.com/Pages/poems/breaking-point.html #breakingPointPoem');
@@ -246,6 +261,7 @@
     $('#innerframe6').load('https://pulcherrimumquaerere.com/Pages/poems/im-tired.html #sectionImTired');
     $('#innerframe7').load('https://pulcherrimumquaerere.com/Pages/poems/malnourished.html #malnourishedPoem');
     $('#innerframe8').load('https://pulcherrimumquaerere.com/Pages/poems/the-five-ws.html #theFiveWPoem');
+    $('#innerframe9').load('https://pulcherrimumquaerere.com/Pages/poems/mutually-ensure-destruction.html #mutuallyEnsureDestruction');
   </script>
   
 </body>
@@ -261,6 +277,7 @@
       $('#im-tired-readtime').html(numberCount(sectionImTired));
       $('#malnourished-readtime').html(numberCount(malnourishedPoem));
       $('#the-five-w-readtime').html(numberCount(theFiveWPoem));
+      $('#mutually-ensure-destruction-readtime').html(numberCount(mutuallyEnsureDestruction));
     }, "200");
   };
 </script>

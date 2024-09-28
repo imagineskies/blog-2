@@ -65,6 +65,32 @@ Functions / Actions
 ____________________________________________________________________________________
 */
 
+var imageOneScore= 1400;
+var imageTwoScore= 1400;
+var imageThreeScore= 1400;
+var imageFourScore= 1400;
+var imageFiveScore= 1400;
+var imageSixScore= 1400;
+const testingData = ["#imageOne", "#imageTwo", "#imageThree", "#imageFour", "#imageFive", "#imageSix"];
+function createTestingPairs(data) {
+  let pairs = [];
+
+  // Loop through the array to form all unique pairs
+  for (let i = 0; i < data.length; i++) {
+    for (let j = i + 1; j < data.length; j++) {
+      pairs.push([data[i], data[j]]);
+    }
+  }
+
+  return pairs;
+}
+// Example usage:
+const pairs = createTestingPairs(testingData);
+console.log(pairs);
+console.log("Number of pairs: ", pairs.length);
+
+
+
 document.documentElement.style.setProperty("--figureShortHight", shortImgScale);
 document.documentElement.style.setProperty("--figureLongHight", longImgScale);
 
