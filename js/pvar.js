@@ -4,10 +4,10 @@
 
 // Variables
 
-var siteTitle = "Pulcherrimum Quaerere";
-var siteURL = "https://pulcherrimumquaerere.com/";
-var siteSubTitle = "look beautiful"
-var footerLine = "Pulcherrimum Quaerere | 2024 | Look Beauful";
+var siteTitle = "Site Title";
+var siteURL = "#";
+var siteSubTitle = "Site Sub Title";
+var footerLine = `${siteTitle} | ${new Date().getFullYear()} | ${siteSubTitle}`;
 
 var homePageMenu = `
 <li class="nav-item">
@@ -19,7 +19,7 @@ var homePageMenu = `
     </a>
     <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="Pages/poems.html">Poems</a></li>
-        <li><a class="dropdown-item" href="https://listed.to/@ImagineSkies">Infrequents</a></li>
+        <li><a class="dropdown-item" href="#">Infrequents</a></li>
     </ul>
 </li>
 <li class="nav-item">
@@ -38,7 +38,7 @@ var pagesMenu = `
     </a>
     <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="poems.html">Poems</a></li>
-        <li><a class="dropdown-item" href="https://listed.to/@ImagineSkies">Infrequents</a></li>
+        <li><a class="dropdown-item" href="#">Infrequents</a></li>
     </ul>
 </li>
 <li class="nav-item">
@@ -57,7 +57,7 @@ var navbarsPoemPages = `
     </a>
     <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="../poems.html">Poems</a></li>
-        <li><a class="dropdown-item" href="https://listed.to/@ImagineSkies">Infrequents</a></li>
+        <li><a class="dropdown-item" href="#">Infrequents</a></li>
     </ul>
 </li>
 <li class="nav-item">
